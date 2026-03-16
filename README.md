@@ -1,4 +1,4 @@
-# Hi, I'm MOps 👋
+# Hi, I'm Micheel (MSOps) 👋
 
 Cybersecurity Engineer specialising in **cloud security, identity security, secure cloud integrations, and DevSecOps automation**.
 
