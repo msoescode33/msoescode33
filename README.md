@@ -6,6 +6,12 @@ I build hands-on projects that demonstrate secure infrastructure, security pipel
 
 ---
 
+## 🛡️ Security Training: Try Hack Me
+
+[![TryHackMe](https://tryhackme-badges.s3.amazonaws.com/GooseyintheShell.png)](https://tryhackme.com/p/GooseyintheShell)
+
+---
+
 ## 🔐 Security & Cloud Focus
 
 - Cloud Security (Azure, AWS)
@@ -67,11 +73,5 @@ End-to-end DevSecOps security projects demonstrating IaC guardrails, container s
 ## 📊 GitHub Stats
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=msoescode33&show_icons=true&theme=dark)
-
----
-
-## 🛡️ Security Training
-
-[![TryHackMe](https://tryhackme-badges.s3.amazonaws.com/GooseyintheShell.png)](https://tryhackme.com/p/GooseyintheShell)
 
 ---
