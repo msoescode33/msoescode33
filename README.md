@@ -4,7 +4,7 @@ Cloud security and DevSecOps engineer with hands-on depth across Azure, CrowdStr
 
 ---
 
-## Portfolio — DevSecOps Deploy-n-Show
+## Portfolio - DevSecOps Deploy-n-Show
 
 Ten end-to-end security engineering projects. Each runs `make demo` from a clean clone. Each produces real pipeline output, real tool findings, and real enforcement decisions.
 
