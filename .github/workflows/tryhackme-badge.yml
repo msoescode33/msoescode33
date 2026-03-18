@@ -9,13 +9,19 @@ permissions:
 
 jobs:
   tryhackme-badge-update:
-    name: Update this repo's tryhackme badge with the latest tryhackme image badge
+    name: Update TryHackMe badge
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
     steps:
       - uses: actions/checkout@v4
-      - uses: p4p1/tryhackme-badge-workflow@main
-        with:
-          username: "GooseyintheShell"
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Download badge image
+        run: |
+          curl -o tryhackme.png https://tryhackme-badges.s3.amazonaws.com/GooseyintheShell.png
+
+      - name: Commit and push badge
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add tryhackme.png
+          git diff --cached --quiet || git commit -m "Update TryHackMe badge"
+          git push
