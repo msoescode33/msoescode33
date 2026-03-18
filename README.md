@@ -1,71 +1,38 @@
-# Hi, I'm Micheel (MSOps) 👋
+# Michael Gallo — Security Engineer
 
-Cybersecurity Engineer specialising in **cloud security, identity security, secure cloud integrations, and DevSecOps automation**.
-
-I build hands-on projects that demonstrate secure infrastructure, security pipelines, and detection engineering.
+Cloud security and DevSecOps engineer with hands-on depth across Azure, CrowdStrike, and CI/CD security automation. I build reproducible, evidence-based security systems — pipeline gates that block real threats, detection rules that fire on real behaviour, and infrastructure guardrails that enforce policy before deployment.
 
 ---
 
-## 🛡️ Security Training: Try Hack Me
+## Portfolio — DevSecOps Deploy-n-Show
 
-[![TryHackMe](https://tryhackme-badges.s3.amazonaws.com/GooseyintheShell.png)](https://tryhackme.com/p/GooseyintheShell)
+Ten end-to-end security engineering projects. Each runs `make demo` from a clean clone. Each produces real pipeline output, real tool findings, and real enforcement decisions.
 
----
+**[→ View the full repository](https://github.com/msoescode33/DevSecOps-Deploy-n-Show)**
 
-## 🔐 Security & Cloud Focus
-
-- Cloud Security (Azure, AWS)
-- DevSecOps pipelines
-- Infrastructure as Code security
-- Container security
-- Threat detection & monitoring
-- Security automation
-- Cloud resource integrations
-- Identity security
+| Project | What it does |
+|---|---|
+| **P01 — IaC Guardrails** | Terraform + Checkov two-gate pipeline. Secrets detection via Gitleaks, policy enforcement via Checkov. Intentional misconfigurations included to validate controls fire. |
+| **P02 — Kubernetes Baseline** | KIND cluster with Kyverno admission control and Trivy image scanning. Intentional policy violations by design — controls are verified to work, not assumed. |
+| **P03 — Container Supply Chain** | SBOM generation via Syft, keyless image signing via Cosign/Sigstore, OCI-attached signature stored in GHCR. Tamper-evident provenance end-to-end. |
+| **P05 — Multi-Gate CI Pipeline** | Four independent jobs: SAST (Semgrep), SCA (pip-audit), secrets detection (Gitleaks), IaC scanning (Checkov). Discrete pass/fail per gate, named artifacts, SARIF output. |
+| **P07 — Policy as Code** | OPA + Conftest enforcing custom Rego policies as a CI gate. Per-gate job structure, dynamic pipeline summary via `needs.<job>.result`. |
+| **P08 — Runtime Detection** | Five custom Falco rules firing against live container behaviour. Gate 3 uses Python/PyYAML structural validation. Outbound connection rules scoped to avoid false positives. |
 
 ---
 
-## 🛠️ Technologies
+## Azure CNAPP Lab
 
-![Azure](https://img.shields.io/badge/Azure-Cloud-blue?logo=microsoftazure)
-![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazonaws)
-![Microsoft Defender](https://img.shields.io/badge/Microsoft%20Defender-Cloud%20Security-0078D4?logo=microsoftdefender)
-![Microsoft Sentinel](https://img.shields.io/badge/Microsoft%20Sentinel-SIEM-0078D4?logo=microsoftazure)
-![CrowdStrike](https://img.shields.io/badge/CrowdStrike-EDR-E6242A?logo=crowdstrike)
-![Terraform](https://img.shields.io/badge/Terraform-IaC-623CE4?logo=terraform)
-![Docker](https://img.shields.io/badge/Docker-Containers-2496ED?logo=docker)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?logo=kubernetes)
-![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-2088FF?logo=githubactions)
-![Python](https://img.shields.io/badge/Python-Automation-3776AB?logo=python)
-![Linux](https://img.shields.io/badge/Linux-Systems-FCC624?logo=linux)
+Live hybrid environment: Azure Arc-connected on-premises VM (`siemvm`) alongside Azure-native VM (`Defendervm01`). Defender for Cloud CSPM + CWPP Plan 2, Microsoft Sentinel SIEM, MDE — configured, not just deployed.
 
 ---
 
-## 🚀 Security Engineering Projects
+## Core Tooling
 
-🔹 **Infrastructure-as-Code Guardrails (Terraform + Checkov)**
-Misconfigured infrastructure and embedded secrets blocked before deployment via a two-gate CI pipeline — secrets detection (Gitleaks) and IaC policy enforcement (Checkov) running against intentionally misconfigured Terraform.
-
-🔹 **Multi-Gate CI Security Pipeline**
-Four independent CI jobs — SAST (Semgrep), SCA (Safety/pip-audit), secrets detection (Gitleaks), and IaC scanning (Checkov) — each with discrete pass/fail, named artifact output, and SARIF reporting across the full vulnerability surface.
-
-🔹 **Container Supply Chain — SBOM & Keyless Signing**
-Unverified container images present a silent insertion point in any delivery pipeline. SBOM generated via Syft, image signed keylessly via Cosign/Sigstore, signature stored as an OCI attachment in GHCR — tamper-evident provenance, audit-ready.
-
-🔹 **Kubernetes Security Baseline (Kind + Kyverno + Trivy)**
-Policy enforcement and vulnerability detection across a local Kubernetes cluster — admission control via Kyverno, container image scanning via Trivy, with intentional policy violations by design to validate controls fire correctly.
+`Azure` `Defender for Cloud` `Microsoft Sentinel` `CrowdStrike Falcon` `Terraform` `Checkov` `GitHub Actions` `Gitleaks` `Semgrep` `Syft` `Cosign` `Kyverno` `Trivy` `Falco` `OPA/Conftest` `Docker` `Kubernetes` `Python` `Linux`
 
 ---
 
-## 📁 Portfolio
+## TryHackMe
 
-🔹 **[DevSecOps Deploy-n-Show](https://github.com/msoescode33/DevSecOps-Deploy-n-Show)**  
-End-to-end DevSecOps security projects demonstrating IaC guardrails, container scanning, runtime detection, and CI/CD security pipelines.
-
----
-
-## 📊 GitHub Stats
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=msoescode33&show_icons=true&theme=dark)
-
----
+[GooseyintheShell](https://tryhackme.com/p/GooseyintheShell)
