@@ -21,15 +21,33 @@ Ten end-to-end security engineering projects. Each runs `make demo` from a clean
 
 ---
 
-## Azure CNAPP Lab
+## Azure Security (Azure Repos + Defender for Cloud + Azure DevOps))
 
-Live hybrid environment: Azure Arc-connected on-premises VM (`siemvm`) alongside Azure-native VM (`Defendervm01`). Defender for Cloud CSPM + CWPP Plan 2, Microsoft Sentinel SIEM, MDE — configured, not just deployed.
+> A second portfolio series focused entirely on Microsoft-native security
+> tooling — Bicep, Azure DevOps Pipelines, Defender for Cloud, Azure Policy,
+> and Entra ID. Where DevSecOps-Deploy-n-Show demonstrates open-source
+> security tooling on GitHub Actions, this series demonstrates the same
+> engineering discipline using the Microsoft security stack.
+
+| Project | Focus | Stack |
+|---|---|---|
+| P01: ACA Defender Posture | Container security · Defender for Containers · Azure Policy as code | Bicep · ADO · ACA · ACR · Defender for Cloud |
+| P02: Defender for DevOps | Pipeline findings in Defender for Cloud · MSDO · repo-wide SAST/IaC scanning | Bicep · ADO · MicrosoftSecurityDevOps task |
+| P03: Policy as Code | Custom policy initiatives · Deny effect · compliance automation · remediation tasks | Terraform · ADO · Azure Policy |
+| P04: Defender for Storage | Blob threat detection · malware scanning · end-to-end alert evidence | Bicep · ADO · Defender for Storage · EICAR simulation |
+| P05: Entra ID Posture | Conditional Access as code · PIM JIT access · Identity Secure Score | Bicep · Graph API · ADO · Entra ID |
+
+**Common patterns across all projects:**
+- Every security control is codified
+- Each project includes full evidence collection (CLI output, portal screenshots, pipeline logs)
+- Sensitive identifiers redacted for public consumption
+- Docs include architecture decisions, threat model, runbook, and interview notes
 
 ---
 
 ## Core Tooling
 
-`Azure` `Defender for Cloud` `Microsoft Sentinel` `CrowdStrike Falcon` `Terraform` `Checkov` `GitHub Actions` `Gitleaks` `Semgrep` `Syft` `Cosign` `Kyverno` `Trivy` `Falco` `OPA/Conftest` `Docker` `Kubernetes` `Python` `Linux`
+`Azure` `Defender for Cloud` `Microsoft Sentinel` `CrowdStrike Falcon` `Terraform` `Checkov` `GitHub Actions` `Gitleaks` `Semgrep` `Syft` `Cosign` `Kyverno` `Trivy` `Falco` `OPA/Conftest` `Docker` `Kubernetes` `Python` `Linux` `Azure DevOps`
 
 ---
 
