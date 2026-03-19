@@ -1,6 +1,6 @@
 # Michael: Security Engineer
 
-Cloud security and DevSecOps engineer with hands-on depth across Azure, CrowdStrike, and CI/CD security automation. I build reproducible, evidence-based security systems, pipeline gates that block real threats, detection rules that fire on real behaviour, and infrastructure guardrails that enforce policy before deployment.
+Cloud security and DevSecOps engineer with hands-on depth across Azure, AWS, CrowdStrike, and CI/CD security automation. I build reproducible, evidence-based security systems, pipeline gates that block real threats, detection rules that trigger on real behaviour, and infrastructure guardrails enforcing policy with shift left approach.
 
 ---
 
